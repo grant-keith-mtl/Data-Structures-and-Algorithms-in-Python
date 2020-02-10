@@ -1,4 +1,4 @@
-#Arrays in Python
+# Arrays in Python
 
 Array(List in Python): a collection of elements/values each identified by an array index or key
 - index starts at zero
