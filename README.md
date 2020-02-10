@@ -5,7 +5,7 @@ I am going to go through courses and examples and create folders for each
 Below should be the listed Data Structures and Algorithms
 
 Data Structures
-- Arrays
+- ~~Arrays~~
 - Linked Lists
 - Stacks
 - Queues
