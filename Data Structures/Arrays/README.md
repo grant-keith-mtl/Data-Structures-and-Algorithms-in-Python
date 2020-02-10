@@ -32,6 +32,7 @@ numbers = [[[1],[2],[3]],[[4],[5],[6]],[[7],[8],[9]]]
 
 ## List Operations
 ### Append
+- list.append('x')
 - We can keep adding values to the array as long as it is not full
 - Lists in python are dynamic, so no need to create a new list every time you reach the limit
 - Can add to the end of a list using list.append(variable)
@@ -48,6 +49,7 @@ print(numbers)
 ```
 
 ### Count
+- list.count('x')
 - We can count the number of occurences of "x" in a list using the list.count(x) function
 - Returns the amount of times "x" occurs in the list
 - Time Complexity: O(n)
@@ -62,8 +64,10 @@ print(count)
 ```
 
 ### Index
+- list.index('x')
 - Returns the index of 'x' in the list
-- Time Complexity: O(n)
+- Time Complexity: O(n) 
+    - Have to go through list until finding 'x'
 ```python
 names = ["jared", "alan", "joe", "jared"]
 index = names.index("alan")
@@ -72,4 +76,69 @@ print(index)
 #### Output
 ```
 1
+```
+
+### Insert
+- list.insert('y','x')
+- Inserts 'x' at location 'y'
+- Time Complexity: O(n)
+```python
+names = ["jared", "alan", "joe", "jared"]
+names.insert(2,"grant")
+print(names[2])
+```
+#### Output
+```
+grant
+```
+
+### Pop
+- list.pop(index)
+- Removes and returns the item at the end of the list or at the optional index argument
+- Time Complexity: O(n)
+    - Has to iterate to end of list and then remove and return element
+```python
+names = ["jared", "alan", "joe", "jared"]
+print(names.pop())
+print(names)
+```
+#### Output
+```
+jared
+['jared', 'alan', 'joe']
+```
+
+### Remove
+- list.remove('x')
+- Finds and removes the first occurence of x
+- Time Complexity: O(n)
+    - Needs to iterate and check each item in list
+```python
+names = ["jared", "alan", "joe", "jared"]
+names.remove("jared")
+print(names)
+```
+#### Output
+```
+['alan', 'joe', 'jared']
+```
+
+### Reverse
+- list.reverse()
+- Reverses the order of elements in a list
+- Time Complexity: O(n)
+```python
+names = ["jared", "alan", "joe", "jared"]
+names.reverse()
+print(names)
+```
+
+### Sort
+- list.sort()
+- Sorts the list in ascending order of alphabet or numerically
+- Time Complexity: O(n*logn)
+```
+names = ["jared", "alan", "joe", "jared"]
+names.sort()
+print(names)
 ```
