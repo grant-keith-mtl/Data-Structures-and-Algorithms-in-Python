@@ -30,8 +30,8 @@ numbers = [[[1],[2],[3]],[[4],[5],[6]],[[7],[8],[9]]]
     - Reconstructing an array is O(N) operation
 - It is not able to store items with different types, unless in python
 
-## Arrays Operations
-### Add
+## List Operations
+### Append
 - We can keep adding values to the array as long as it is not full
 - Lists in python are dynamic, so no need to create a new list every time you reach the limit
 - Can add to the end of a list using list.append(variable)
@@ -44,4 +44,18 @@ print(numbers)
 #### Output
 ```pythom
 [6, 5]
+```
+
+### Count
+- We can count the number of occurences of "x" in a list using the list.count(x) function
+- Returns the amount of times "x" occurs in the list
+
+```python
+names = ["jared", "alan", "joe", "jared"]
+count = names.count("jared")
+print(count)
+```
+#### Output
+```
+2
 ```

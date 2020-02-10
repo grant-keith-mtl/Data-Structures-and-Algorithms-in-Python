@@ -14,3 +14,8 @@ print(numbers2[0][2])
 #Adding to the list
 numbers.append(60)
 print(numbers)
+
+#Counting occurences of x in the list
+names = ["jared", "alan", "joe", "jared"]
+count = names.count("jared")
+print(count)
