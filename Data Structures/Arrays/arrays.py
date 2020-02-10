@@ -19,3 +19,7 @@ print(numbers)
 names = ["jared", "alan", "joe", "jared"]
 count = names.count("jared")
 print(count)
+
+#Checking index of 'x'
+index = names.index("alan")
+print(index)

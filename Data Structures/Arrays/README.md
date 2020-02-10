@@ -35,6 +35,7 @@ numbers = [[[1],[2],[3]],[[4],[5],[6]],[[7],[8],[9]]]
 - We can keep adding values to the array as long as it is not full
 - Lists in python are dynamic, so no need to create a new list every time you reach the limit
 - Can add to the end of a list using list.append(variable)
+- Time Complexity: O(1)
 
 ```python
 numbers = [6]
@@ -49,7 +50,7 @@ print(numbers)
 ### Count
 - We can count the number of occurences of "x" in a list using the list.count(x) function
 - Returns the amount of times "x" occurs in the list
-
+- Time Complexity: O(n)
 ```python
 names = ["jared", "alan", "joe", "jared"]
 count = names.count("jared")
@@ -58,4 +59,17 @@ print(count)
 #### Output
 ```
 2
+```
+
+### Index
+- Returns the index of 'x' in the list
+- Time Complexity: O(n)
+```python
+names = ["jared", "alan", "joe", "jared"]
+index = names.index("alan")
+print(index)
+```
+#### Output
+```
+1
 ```
