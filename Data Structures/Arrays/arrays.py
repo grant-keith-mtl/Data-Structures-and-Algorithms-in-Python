@@ -9,3 +9,8 @@ print(numbers[0])
 
 #Works same for two dimensional
 print(numbers2[0])
+print(numbers2[0][2])
+
+#Adding to the list
+numbers.append(60)
+print(numbers)
